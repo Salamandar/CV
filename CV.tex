@@ -1,0 +1,78 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[top=2cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{3.5cm}
+
+\usepackage{colortbl,calc}
+\newlength{\myseparatorlinewidth}
+\newlength{\myseparatorspaceswidth}
+\newcommand*{\cvitemsep}[3][.25em]{%
+  \begin{tabular}{@{}p{\hintscolumnwidth}
+                @{\hspace{\myseparatorspaceswidth}}
+                !{\color{color1}\vrule width \myseparatorlinewidth}
+                @{\hspace{\myseparatorspaceswidth}}
+                p{\maincolumnwidth}@{}}%
+    \raggedleft\hintstyle{#2} &\par{#3}%
+  \end{tabular}%
+  \par\addvspace{#1}}
+
+
+\photo[64pt][0.pt]{photo.pdf}
+\firstname{Félix}
+\familyname{Piédallu}
+\title{Ingénieur R\&D en Physique \& Nanosciences\newline à Phelma, Grenoble INP}
+\address{15 rue Buffon}{38000 Grenoble}
+\email{felix@piedallu.me}
+\homepage{geekolloc.fr}
+\mobile{06 51 41 32 48}
+\extrainfo{20 ans}
+
+\begin{document}
+\setlength{\myseparatorlinewidth}{1.5pt}
+\setlength{\myseparatorspaceswidth}{.5\separatorcolumnwidth-.5\myseparatorlinewidth}
+
+
+\maketitle
+%\cventry{Objet :}{Stage opérateur de Première Année}{}{}{}{}
+\vspace*{-1cm}
+\section{Formation}
+
+\cventry{2013 -- 2016}{Diplôme d'Ingénieur}{Phelma}{Grenoble INP}{Physique \& Nanosciences}{Spécialité Optique-Microélectronique}
+\cventry{2011 -- 2013}{Classe Préparatoire}{Lycée Charlemagne}{Paris}{Maths-Physique (MP*)}{}
+\cventry{2011}{Baccalauréat Scientifique}{Lycée Claude Monet}{Paris}{Mention Bien}{}
+
+
+\section{Réalisations techniques}
+\cventry{2016}{Stage de fin d'études}{Institut Néel}{Nano-Optique et Forces}{Grenoble (5 mois)}{Élaboration et caractérisation de nano-pointes fibrées en vue du développement d'une nano-pince plasmonique originale}
+\cventry{2015}{Stage d'Application}{Laboratoire Pierre Aigrain}{Équipe Hybrid Quantum Circuits}{Paris (10 semaines)}{Mise en place à très basse température d'une expérience de transport quantique dans une cavité hybride}
+\cventry{2014 -- 2015}{Président du Club Robotronik de Phelma}{}{}{}{}
+\cventry{2014}{Stage Opérateur}{}{à la DSI du Courier de La Poste (8 semaines)}{}{Intégration sous Android d'un service de reconnaissance d'images sur serveur distant.}
+\cventry{2013 -- 2014}{Participation à la Coupe de France de Robotique}{}{}{}{}
+
+
+\section{Connaissances en informatique}
+\cvitem{Langages maîtrisés}{C, C++, Gtk+, \LaTeX, Java (Android)}
+\cvitem{Autres langages}{HTML, Python, Matlab, Rust}
+\cvitem{Systèmes}{Linux (Arch, Debian \& Ubuntu), Raspberry Pi}
+
+
+\section{Compétences Linguistiques}
+\cvlanguage{Allemand}{Lu, écrit, parlé}{Première langue entre 2004 et 2013, séjours en Allemagne}
+\cvlanguage{Anglais}{Lu, écrit, parlé couramment}{93\% au BULATS, C2}
+\cvlanguage{Chinois Mandarin}{Lu, écrit, parlé}{10 ans d'apprentissage et un séjour en Chine}
+\cvlanguage{Russe}{Bases acquises}{}
+
+
+\section{Centres d'intérêt}
+\cvitemsep{Informatique \\ Électronique \\ Domotique}{Participe à la Coupe de France de Robotique 
+\newline Projets d'électronique amateur 
+\newline Participe activement à l'élaboration et à la rédaction du Wiki Ubuntu francophone : \href{http://doc.ubuntu-fr.org}{doc.ubuntu-fr.org}}
+%\cvitem{}            {Développement d'une simulation GTK+ pour le club Robotronik}
+\cvitem{Musique}{Pratique l'Accordéon depuis 9 ans, écoute du Jazz au Metal}
+\cvitem{Plongée, Natation}{Diplôme de niveau 1}
+%\cvitem{Tir à l'arc}{Première année}
+\cvitem{Modélisme}{Aéromodélisme et Robotique}
+
+\end{document}
