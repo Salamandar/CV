@@ -10,4 +10,4 @@ jobs:
         uses: repaction/texlive@main
         with:
           tex_files: |
-            CV Félix Piédallu.tex
+            CV\ Félix\ Piédallu.tex
