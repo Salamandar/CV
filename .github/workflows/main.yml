@@ -6,8 +6,14 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
+
       - name: Compile LaTeX document
-        uses: repaction/texlive@main
+        uses: xu-cheng/latex-action@v2
         with:
-          tex_files: |
-            CV\ Félix\ Piédallu.tex
+          latexmk_use_xelatex: true
+          root_file: CV Félix Piédallu.tex
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: CV Félix Piédallu.pdf
