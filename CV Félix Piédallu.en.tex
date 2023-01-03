@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[top=2cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+\let\fax\undefined
+\usepackage{marvosym}
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{3.5cm}
+
+\usepackage{colortbl,calc}
+\newlength{\myseparatorlinewidth}
+\newlength{\myseparatorspaceswidth}
+\newcommand*{\cvitemsep}[3][.25em]{
+  \begin{tabular}{@{}p{\hintscolumnwidth}
+      @{\hspace{\myseparatorspaceswidth}}
+      !{\color{color1}\vrule width \myseparatorlinewidth}
+      @{\hspace{\myseparatorspaceswidth}}
+      p{\maincolumnwidth}@{}
+    }
+    \raggedleft\hintstyle{#2} &\par{#3}
+  \end{tabular}
+  \par\addvspace{#1}
+}
+
+
+
+\photo[64pt][0.pt]{photo.pdf}
+\firstname{Félix}
+\familyname{Piédallu}
+\title{Software and electronics engineer}
+\address{28 rue Jean Macé}{38000 Grenoble, France}
+\email{felix@piedallu.me}
+\homepage{salamandar.fr}
+\mobile{\href{tel:+33 6 51 41 32 48}{06 51 41 32 48}}
+
+\begin{document}
+\setlength{\myseparatorlinewidth}{1pt}
+\setlength{\myseparatorspaceswidth}{.5\separatorcolumnwidth-.5\myseparatorlinewidth}
+
+
+\maketitle
+\vspace*{-1cm}
+
+\section{Réalisations techniques}
+
+\cventry{\textbf{2020 -- 2022}\\2.5 years -- CDI}{Software engineer}{Kalray}{Grenoble}{}{
+  \begin{itemize}
+    \item Embedded Linux software development on a specific $kvx$ architecture
+    \item Modernization and redesign of the automated testing code base
+  \end{itemize}
+}
+\cventry{\textbf{2022}}{Electronics designer}{Elsys Design}{Grenoble}{}{
+  \begin{itemize}
+    \item Estimation and design of a daughter board for "Time of Flight" distance sensors
+  \end{itemize}
+}
+\cventry{\textbf{2018 -- 2019}\\1.5 years -- CDD}{Fablab Engineer}{Grenoble INP - Phelma}{Grenoble}{}{
+  \begin{itemize}
+    \item Management of a laboratory with 3D printers and CNCs
+    \item Design and manufacturing of students' lab models
+  \end{itemize}
+}
+\cventry{\textbf{2017 -- 2018}\\1.5 years -- CDI}{Software engineer in \texttt{C++}}{Keepixo/Anevia}{Meylan}{}{
+  Design and development of a video streaming and encoding solution server
+  \begin{itemize}
+    \item Linux porting of the whole software stack
+    \item Code base modernizing, CMake porting
+  \end{itemize}
+}
+\cventry{\textbf{2016}\\5 months}{Stage de fin d'études}{Néel Institute (CNRS)}{Grenoble}{}{
+  Fiber tips characterization, for a plasmonic nanotweezers application
+  Caractérisation de pointes fibrées pour une pince optique plasmonique
+  \begin{itemize}
+    \item Optics and photonics instrumentation and measurements
+  \end{itemize}
+}
+\cventry{\textbf{2015}\\10 weeks}{Application internship}{Pierre Aigrain Laboratory (ENS)}{}{Paris}{
+  Set up of a quantum transport experiment at very low temperatures
+  \begin{itemize}
+    \item Manufacturing and setting up of HF lanes
+  \end{itemize}
+}
+\cventry{\textbf{2014}\\8 weeks}{Internship}{}{La Poste Innovation Center}{}{
+  Integration on Android of an online image recognition service.
+}
+\cventry{\textbf{2014 -- 2015}}{President of the student robotics club Robotronik Phelma}{}{}{}{}
+\cventry{\textbf{2013 -- 2020}}{Participation to the French Robotics Club}{}{}{}{
+  With Robotronik Phelma, then Phenix Robotik and as volunteer.
+}
+
+
+\section{Education}
+\cventry{\textbf{2013 -- 2016}}{Engineer's degree}{}{Grenoble INP - Phelma}{\textit{Physics \& Nanophysics}}{Optics and Microelectronics specialization}
+\cventry{\textbf{2011 -- 2013}}{Preparatory Class}{Charlemagne High School}{Paris}{Maths-Physics (MP*)}{}
+\cventry{\textbf{2011}}{Scientific Baccalaureate}{Claude Monet High School}{Paris}{With }{}
+
+
+\section{Technical Skills}
+\cvitemsep{Core competences}{
+          C, C++, Python, Meson, Yocto
+\newline  Arduino/STM32, Bare-Metal/RTOS
+\newline  Electronics design (KiCAD)
+\newline  CAD (OpenSCAD, FreeCAD), 3D Printing
+}
+\cvitem{Others}{Rust, Java (Android), html/css, Zephyr}
+\cvitem{Platforms}{Linux (Archlinux, Debian), Raspberry Pi, Embedded}
+
+
+\section{Languages}
+\cvlanguage{English}{Fluent}{93\% at BULATS, C2}
+\cvlanguage{German}{Intermediate}{First learnt language between 2004 and 2013}
+\cvlanguage{Mandarin Chinese}{Basic}{Learnt for 10 years}
+%\cvlanguage{Russe}{Bases acquises}{}
+
+
+\section{Interests}
+\cvitemsep{Informatics \\ Electronics}{
+          National French Robotics Cup participant (\href{https://phenixrobotik.fr}{\ComputerMouse \texttt{Phenix Robotik}})
+\newline  Personal software and electronics projects (\href{https://github.com/Salamandar}{\ComputerMouse \texttt{Github Profile}})
+%\newline  Participe à la rédaction du Wiki Ubuntu francophone
+}
+\cvitem{Musics}{Listens from Jazz to Heavy Metal}
+\cvitem{Sport}{Swimming, Scuba diving, Archery}
+
+\end{document}
