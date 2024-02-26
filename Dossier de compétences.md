@@ -36,6 +36,7 @@ Outils :
 * Toolchains GCC/Intel icc
 * Cross-compilation [3/5]
 * Réseau (VLAN, network-namespaces, DHCP, link-local) [2/5]
+* KiCAD [4/5]
 
 Contributions diverses au monde du logiciel libre :
 
@@ -106,6 +107,14 @@ Conception de petites cartes électroniques.
   * Établissement d'une stratégie de mise à niveau et de refactoring d
 * Intégration d'une solution d'agrégation de capteurs Zigbee et Modbus sur Linux dans Yocto
 
+### Ingénieur Carte électronique
+
+> Enerbee (Syslinbit, mars-avril 2023)
+
+* Spécification, conception et réalisation d'une carte électronique
+  * Gestion de la puissance, alimentation sur batterie et USB
+  * Utilisation d'un microcontrôleur ESP32 et d'un System on Module LoRaWAN
+  
 ### Ingénieur logiciel et tests
 
 > Kalray - Montbonnot (Elsys Design, de mars 2020 à décembre 2022)
