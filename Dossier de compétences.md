@@ -1,44 +1,116 @@
-# Ingénieur informatique et électronique
+---
+numbersections: true
+fontfamily: libertine
+shift-heading-level-by: -1
+---
 
-5 ans d'expérience en développement logiciel, en logiciel embarqué et en électronique numérique
 
-## Compétences métier majeures
+# Dossier de compétences − Félix Piédallu
 
-* Développement logiciel
-* Écriture de documentations développeur et utilisateur
-* Contribution à des logiciels libres majeurs
-* Solides connaissances de l'écosystème du développement logiciel
+7 ans d'expérience en développement logiciel, en logiciel embarqué et en électronique numérique
 
-## Compétences techniques majeures
+## Compétences techniques
 
-* Développement logiciel Linux natif, système et applicatif
-* Développement Linux embarqué (Yocto, Buildroot, drivers)
-* Développement firmware embarqué (Bare metal, FreeRTOS, Zephyr)
-* Conception électronique numérique et microcontrôleurs
-* Écriture de tests système
+### Développement logiciel
 
-## Formation
+* Développement _user-space_ sous Linux, natif ou embarqué.
+* Développement firmware embarqué et noyau Linux.
 
-Diplôme d'Ingénieur - Physique Nanosciences - Optique et Microélectronique - Grenoble INP -
-Phelma - 2016
+Langages :
 
-## Aptitudes générales
+* C, C++ [4/5]
+* Python [4/5]
+* Bash [5/5]
+* Rust [1/5]
+* Java (Android) [2/5]
+* Programmation SIMD (SSE, AVX) [1/5]
 
-* Aptitude à l'apprentissage
-* Adaptabilité
-* Curiosité
-* Capacité relationnelle
+Outils :
 
-Anglais: courant professionnel
-Allemand: 2/5
+* Git [4/5]
+* SVN [2/5]
+* Build systems : Make [3/5], Meson, CMake
+* Docker [3/5]
+* Système Linux [4/5]
+* Débuggeur GDB [2/5]
+* Toolchains GCC/Intel icc
+* Cross-compilation [3/5]
+* Réseau (VLAN, network-namespaces, DHCP, link-local) [2/5]
+
+Contributions diverses au monde du logiciel libre :
+
+* Yunohost : distribution linux orientée auto-hébergement
+* Portage de Gimp sous Meson
+* Contributions diverses sur des projets pour l'embarqué
+* Solides connaissances de l'écosystème libre du développement logiciel
+
+### Développement Linux embarqué
+
+Développement de systèmes et du noyau Linux pour l'embarqué.
+
+* Buildroot [3/5]
+* Yocto [3/5] (Formation Yocto Bootlin en juillet 2022)
+* Développement noyau Linux et drivers [2/5]
+* Ethernet (Drivers PHY, MAC, DSA) [2/5]
+
+### Développement Firmware embarqué
+
+Développement embarqué _bare metal_ ou avec OS temps réel.
+
+* Robotique autonome _via_ le club Robotronik pour la Coupe de France de robotique
+* Développement de stack ethernet sous OS temps réel
+
+Technologies utilisées:
+
+* stm32 [3/5]
+* KVX (Kalray) [1/5]
+* Périphériques i²c, SPI, CAN, analogique, DMA [2/5]
+* Plusieurs HALs: ST, libopencm3 [2/5]
+* FreeRTOS [2/5]
+* Zephyr OS [1/5]
+
+### Tests logiciels
+
+Écriture de tests logiciel automatisés, natifs et pour l'embarqué.
+
+* Framework de tests maison en Bash
+* Pytest [3/5]
+* Intégration continue:
+  * Gitlab CI [4/5]
+  * Jenkins [2/5]
+* Tests via communication série
+
+### Conception électronique
+
+Conception de petites cartes électroniques.
+
+* KiCAD [4/5]
+* Altium [1/5]
+* Microcontrôleurs [3/5]
+* Signaux basse vitesse [3/5]
+* Signaux haute vitesse [1/5]
+* Puissance [2/5]
 
 ## Expériences et projets
+
+### Ingénieur linux embarqué
+
+> Schneider (Syslinbit, de mars 2023 à mars 2024)
+
+* _Bring-up_ du bootloader et de Linux sur une carte embarquée
+  * Adaptation de drivers et de device trees à la nouvelle carte
+  * Développement d'un driver pour un périphérique Ethernet T1S pour Linux
+  * Évolution et refactoring d'un environnement de développement Yocto
+* Passage à Linux v5.10
+  * _Rebase_ depuis v4.19 de drivers internes pour Ethernet, RS485, WiFi
+  * Établissement d'une stratégie de mise à niveau et de refactoring d
+* Intégration d'une solution d'agrégation de capteurs Zigbee et Modbus sur Linux dans Yocto
 
 ### Ingénieur logiciel et tests
 
 > Kalray - Montbonnot (Elsys Design, de mars 2020 à décembre 2022)
 
-#### Rôles, actions menées et objectifs atteints
+Projets et réalisations :
 
 * Développement sur une stack ethernet/IP en C en embarquée sur un OS temps réel
   * Rajout de fonctionnalités
@@ -61,7 +133,7 @@ Allemand: 2/5
 * Gestion d'un datacenter de tests et d'intégration continue
   * Mise en place et gestion de machines
 
-#### Environnement technique, métier et fonctionnel
+Outils et environnement technique :
 
 * Développement sous Linux (Ubuntu), avec Git, Phabricator, Jenkins
 * Buildroot, Yocto, Meson, Make
@@ -73,7 +145,7 @@ Allemand: 2/5
 
 > Grenoble INP - Phelma - Grenoble (de septembre 2018 à mars 2020)
 
-#### Rôles, actions menées et objectifs atteints
+Projets et réalisations :
 
 * Gestion d'un atelier mécanique en lien avec les étudiants
   * Accompagnement des étudiants sur leurs réalisations techniques
@@ -90,7 +162,7 @@ Allemand: 2/5
   * Encadrement de travaux pratiques de mesures physiques et d'électronique
   * Formation d'étudiants à la conception électronique sur KiCAD
 
-#### Environnement technique, métier et fonctionnel
+Outils et environnement technique :
 
 * Développement sous Linux, pour Raspberry Pi, Arduino
 * C, C++, Python
@@ -99,10 +171,10 @@ Allemand: 2/5
 
 ### Ingénieur développement logiciel C++
 
-> Keepixo/Ateme - Meylan (de janvier 2018 à juin 2019)
+> Keepixo/Ateme - Meylan (de janvier 2017 à juin 2018)
 > Développement et portage sous Linux d'un logiciel de transcodage vidéo
 
-#### Rôles, actions menées et objectifs atteints
+Projets et réalisations :
 
 * Portage sous Linux d'un logiciel C++ Windows
   * Portage vers C++17, et modernisation du code spécifique Windows
@@ -116,7 +188,7 @@ performances
 * Développement de librairies de filtre vidéo haute performance
 * Formation de l'équipe au développement/déploiement sous Linux
 
-#### Environnement technique, métier et fonctionnel
+Outils et environnement technique :
 
 * Développement sous Linux (Manjaro + Debian)
 * C++17, Boost, CMake, Subversion (SVN)
@@ -130,7 +202,7 @@ performances
 > Robotronik Phelma et Phenix Robotik (de octobre 2013 à juillet 2019)
 > Participation annuelle à la Coupe de France de Robotique
 
-#### Rôles, actions menées et objectifs atteints
+Projets et réalisations :
 
 * Conception électronique de cartes
   * Contrôle moteur via ponts en H
@@ -149,11 +221,10 @@ performances
   * Mise en place d'un projet d'intégration des nouveaux membres
   * Communication au public et à l'administration de l'école
 
-#### Environnement technique, métier et fonctionnel
+Outils et environnement technique :
 
 * Linux (Manjaro)
 * C, C++
 * Altium et KiCAD
 * OpenSCAD, FreeCAD (CAO 3D)
 * Capteurs ToF (Time of Flight), ultrason, encodeurs rotatifs
-

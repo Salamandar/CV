@@ -3,6 +3,13 @@ default: build
 %.pdf: %.tex
 	xelatex "$^"
 
+%.pdf: %.md
+	pandoc --pdf-engine=xelatex --shift-heading-level-by=-1 \
+		"$<" -o "$@"
+	rm -f "$@.tmp"
+	pdfattach "$@" "$<" "$@.tmp"
+	mv "$@.tmp" "$@"
+
 build: CV\ Félix\ Piédallu.pdf CV\ Félix\ Piédallu.en.pdf
 
 deploy: CV\ Félix\ Piédallu.pdf CV\ Félix\ Piédallu.en.pdf
