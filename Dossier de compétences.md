@@ -7,7 +7,10 @@ shift-heading-level-by: -1
 
 # Dossier de compétences − Félix Piédallu
 
-7 ans d'expérience en développement logiciel, en logiciel embarqué et en électronique numérique
+7 ans d'expérience
+
+* Développement logiciel débarqué et embarqué
+* Conception électronique
 
 ## Compétences techniques
 
@@ -83,7 +86,7 @@ Technologies utilisées:
 
 ### Conception électronique
 
-Conception de petites cartes électroniques.
+Conception de cartes électroniques.
 
 * KiCAD [4/5]
 * Altium [1/5]

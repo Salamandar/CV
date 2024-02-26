@@ -1,5 +1,7 @@
 default: build
 
+build: CV\ Félix\ Piédallu.pdf CV\ Félix\ Piédallu.en.pdf Dossier\ de\ compétences.pdf
+
 %.pdf: %.tex
 	xelatex "$^"
 
@@ -9,8 +11,6 @@ default: build
 	rm -f "$@.tmp"
 	pdfattach "$@" "$<" "$@.tmp"
 	mv "$@.tmp" "$@"
-
-build: CV\ Félix\ Piédallu.pdf CV\ Félix\ Piédallu.en.pdf
 
 deploy: CV\ Félix\ Piédallu.pdf CV\ Félix\ Piédallu.en.pdf
 	rsync -av CV\ Félix\ Piédallu.pdf CV\ Félix\ Piédallu.en.pdf salamandar@salamandar.fr:/tmp
