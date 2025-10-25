@@ -5,13 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
-        with:
-          latexmk_use_xelatex: true
-          root_file: CV Félix Piédallu.tex
+      - uses: typst-community/setup-typst@v4
+
+      - name: Build CV
+        run: typst compile "CV Félix Piédallu.typ"
 
       - uses: actions/upload-artifact@v3
         with:
