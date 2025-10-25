@@ -155,10 +155,10 @@
 )
 
 #let daterange(start: [], end: none, duration: []) = {
-  if not end == none {
-    let items = (datebox(year: start), [--], datebox(year: end))
+  let items = if not end == none {
+    [#datebox(year: start) -- #datebox(year: end)]
   } else {
-    let items = (datebox(year: start))
+    datebox(year: start)
   }
   box(
     stack(dir: ttb, spacing: 0.5em,
